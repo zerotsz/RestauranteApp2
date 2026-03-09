@@ -65,7 +65,9 @@ function buscarPlatoPorNombre(nombre) {
 }
 
 
-// FILTRAR STOCK BAJO
+//Implementa filtrarStockBajo con filter
+
+
 function filtrarStockBajo() {
     return menu.filter(plato => plato.stock <= 3);
 }
@@ -156,6 +158,7 @@ document.getElementById("btnBuscar").addEventListener("click", () => {
     }
 });
 
+//Agrega venderPlato con validación de stock
 
 // BOTON STOCK BAJO
 document.getElementById("btnStockBajo").addEventListener("click", () => {
@@ -169,7 +172,7 @@ document.getElementById("btnStockBajo").addEventListener("click", () => {
     renderLista("Stock bajo", lista);
 });
 
-
+//Implementa resumen con map
 // BOTON RESUMEN
 document.getElementById("btnResumen").addEventListener("click", () => {
 
