@@ -73,7 +73,7 @@ function filtrarStockBajo() {
 }
 
 
-// RESUMEN DEL MENU
+//Implementa resumen con map
 function obtenerResumenMenu() {
     return menu.map(plato =>
         plato.nombre + " - S/ " + plato.precio
