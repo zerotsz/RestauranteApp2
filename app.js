@@ -97,7 +97,7 @@ function renderLista(titulo, lista) {
 
     output.innerHTML = html;
 }
-
+//Agrega venderPlato con validación de stock
 function venderPlato(nombre, cantidad) {
 
     const plato = menu.find(p => p.nombre.toLowerCase() === nombre.toLowerCase());
@@ -158,7 +158,7 @@ document.getElementById("btnBuscar").addEventListener("click", () => {
     }
 });
 
-//Agrega venderPlato con validación de stock
+
 
 // BOTON STOCK BAJO
 document.getElementById("btnStockBajo").addEventListener("click", () => {
@@ -172,7 +172,7 @@ document.getElementById("btnStockBajo").addEventListener("click", () => {
     renderLista("Stock bajo", lista);
 });
 
-//Implementa resumen con map
+
 // BOTON RESUMEN
 document.getElementById("btnResumen").addEventListener("click", () => {
 
